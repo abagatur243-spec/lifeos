@@ -128,3 +128,4 @@ function reset(){if(confirm('TÜM veriler silinecek. Emin misin?')&&confirm('Bu 
 (async()=>{try{db=await open();st=Object.assign(def(),await idbGet()||{})}catch(e){alert('Depolama açılamadı. Özel gezinme modunda olabilirsin.')}
 navigator.storage?.persist?.();if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});render()})();
 </script></body></html>
+
